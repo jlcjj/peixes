@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import br.com.axiosprime.pisces.cliente.model.entity.Cliente;
 import br.com.axiosprime.pisces.cliente.model.repository.ClienteRepository;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"br.com.axiosprime.pisces", "br.com.axiosprime.pisces.service"})
 public class ClienteApplication {
 
 	@Bean
